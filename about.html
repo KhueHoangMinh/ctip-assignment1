@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>BRUHHH</title>
         <link href="public/css/style.css" rel="stylesheet"/>
@@ -12,17 +12,17 @@
     </head>
     <body>
         <header>
-            <section id="logo">
+            <section class="logo">
                 <a href="index.html">
                     <img src="public/images/logo/png/logo-no-background.png" alt=""/>
                 </a>
             </section>
             <section id="nav">
-                <label id="expand-btn">
+                <label id="expand-btn" for="openclose">
                     <img src="public/images/menu.svg" alt=""/>
-                    <input type="checkbox">
                 </label>
-                <nav>
+                <input type="checkbox" name="openclose" id="openclose"/>
+                <nav>   
                     <a class="nav-item" href="index.html">
                         <h3>HOME</h3>
                     </a>
@@ -74,27 +74,27 @@
                                 <div class="details-container">
                                     <div class="info-container">
                                         <div class="member-info">
-                                            <div class="single-info">
+                                            <dl class="single-info">
                                                 <dt><strong>Name: </strong></dt>
                                                 <dd>Tran Yen Nhi</dd>
-                                            </div>
-                                            <div class="single-info">
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Student ID: </strong></dt>
-                                                <dd>s104221423</dd>
-                                            </div>
-                                            <div class="single-info">
+                                                <dd>104221423</dd>
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Course: </strong></dt>
                                                 <dd>Bachelor of Computer Science</dd>
-                                            </div>
-                                            <div class="single-info">
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Email: </strong></dt>
                                                 <dd>hoangkhue1803@gmail.com</dd>
-                                            </div>
+                                            </dl>
                                         </div>
                                     </div>
                                     <figure class="figure">
                                         <div class="img-container">
-                                            <img src="public/images/about/khue.jpg" alt="Khue"/>
+                                            <img src="public/images/about/nhi.jpg" alt="Khue"/>
                                         </div>
                                         <figcaption><h2>NHI</h2></figcaption>
                                     </figure>
@@ -108,7 +108,7 @@
                                         </tr>
                                         <tr class="table-row">
                                             <td><strong>Monday</strong></td>
-                                            <td>Vovinam <br/>9a.m-12a.m</td>
+                                            <td>Free</td>
                                             <td>Free</td>
                                         </tr>
                                         <tr class="table-row">
@@ -118,18 +118,18 @@
                                         </tr>
                                         <tr class="table-row">
                                             <td><strong>Wednesday</strong></td>
-                                            <td>COS10006 - Network and Switching <br/>8a.m - 12a.m</td>
-                                            <td class="sunday-td">Free</td>
+                                            <td>Vovinam <br/>8a.m - 12a.m</td>
+                                            <td>COS10006 - Network and Switching <br/>1p.m - 5p.m</td>
                                         </tr>
                                         <tr class="table-row">
                                             <td><strong>Thursday</strong></td>
                                             <td>COS10026 - Computing Technology Inquiry Project <br/>8a.m - 12a.m </td>
-                                            <td>Free</td>
+                                            <td>Fundamentals of Marketing <br/>2p.m - 5p.m</td>
                                         </tr>
                                         <tr class="table-row">
                                             <td><strong>Friday</strong></td>
                                             <td>Free</td>
-                                            <td>COS10005 - Web Development <br/>1p.m - 4p.m</td>
+                                            <td>Free</td>
                                         </tr>
                                         <tr class="table-row">
                                             <td><strong>Saturday</strong></td>
@@ -137,7 +137,7 @@
                                             <td>Free</td>
                                         </tr>
                                         <tr class="table-row">
-                                            <td id="sunday-th" class="sunday"><strong>Sunday</strong></td>
+                                            <td class="sunday"><strong>Sunday</strong></td>
                                             <td class="sunday-td">Free</td>
                                             <td class="sunday-td">Free</td>
                                         </tr>
@@ -150,22 +150,22 @@
                                 <div class="details-container">
                                     <div class="info-container">
                                         <div class="member-info">
-                                            <div class="single-info">
+                                            <dl class="single-info">
                                                 <dt><strong>Name: </strong></dt>
                                                 <dd>Hoang Minh Khue</dd>
-                                            </div>
-                                            <div class="single-info">
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Student ID: </strong></dt>
-                                                <dd>s104221423</dd>
-                                            </div>
-                                            <div class="single-info">
+                                                <dd>104221423</dd>
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Course: </strong></dt>
                                                 <dd>Bachelor of Computer Science</dd>
-                                            </div>
-                                            <div class="single-info">
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Email: </strong></dt>
-                                                <dd>hoangkhue1803@gmail.com</dd>
-                                            </div>
+                                                <dd>104221423@swin.edu.au</dd>
+                                            </dl>
                                         </div>
                                     </div>
                                     <figure class="figure">
@@ -195,7 +195,7 @@
                                         <tr class="table-row">
                                             <td><strong>Wednesday</strong></td>
                                             <td>COS10006 - Network and Switching <br/>8a.m - 12a.m</td>
-                                            <td class="sunday-td">Free</td>
+                                            <td>Free</td>
                                         </tr>
                                         <tr class="table-row">
                                             <td><strong>Thursday</strong></td>
@@ -213,7 +213,7 @@
                                             <td>Free</td>
                                         </tr>
                                         <tr class="table-row">
-                                            <td id="sunday-th" class="sunday"><strong>Sunday</strong></td>
+                                            <td class="sunday"><strong>Sunday</strong></td>
                                             <td class="sunday-td">Free</td>
                                             <td class="sunday-td">Free</td>
                                         </tr>
@@ -226,22 +226,22 @@
                                 <div class="details-container">
                                     <div class="info-container">
                                         <div class="member-info">
-                                            <div class="single-info">
+                                            <dl class="single-info">
                                                 <dt><strong>Name: </strong></dt>
                                                 <dd>Luu Tuan Hoang</dd>
-                                            </div>
-                                            <div class="single-info">
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Student ID: </strong></dt>
                                                 <dd>s104221423</dd>
-                                            </div>
-                                            <div class="single-info">
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Course: </strong></dt>
                                                 <dd>Bachelor of Computer Science</dd>
-                                            </div>
-                                            <div class="single-info">
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Email: </strong></dt>
                                                 <dd>hoangkhue1803@gmail.com</dd>
-                                            </div>
+                                            </dl>
                                         </div>
                                     </div>
                                     <figure class="figure">
@@ -271,7 +271,7 @@
                                         <tr class="table-row">
                                             <td><strong>Wednesday</strong></td>
                                             <td>COS10006 - Network and Switching <br/>8a.m - 12a.m</td>
-                                            <td class="sunday-td">Free</td>
+                                            <td>Free</td>
                                         </tr>
                                         <tr class="table-row">
                                             <td><strong>Thursday</strong></td>
@@ -289,7 +289,7 @@
                                             <td>Free</td>
                                         </tr>
                                         <tr class="table-row">
-                                            <td id="sunday-th" class="sunday"><strong>Sunday</strong></td>
+                                            <td class="sunday"><strong>Sunday</strong></td>
                                             <td class="sunday-td">Free</td>
                                             <td class="sunday-td">Free</td>
                                         </tr>
@@ -302,27 +302,27 @@
                                 <div class="details-container">
                                     <div class="info-container">
                                         <div class="member-info">
-                                            <div class="single-info">
+                                            <dl class="single-info">
                                                 <dt><strong>Name: </strong></dt>
                                                 <dd>Le Nho Bach</dd>
-                                            </div>
-                                            <div class="single-info">
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Student ID: </strong></dt>
-                                                <dd>s104221423</dd>
-                                            </div>
-                                            <div class="single-info">
+                                                <dd>103487884</dd>
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Course: </strong></dt>
                                                 <dd>Bachelor of Computer Science</dd>
-                                            </div>
-                                            <div class="single-info">
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Email: </strong></dt>
-                                                <dd>hoangkhue1803@gmail.com</dd>
-                                            </div>
+                                                <dd>103487884@student.swin.edu.au</dd>
+                                            </dl>
                                         </div>
                                     </div>
                                     <figure class="figure">
                                         <div class="img-container">
-                                            <img src="public/images/about/khue.jpg" alt="Khue"/>
+                                            <img src="public/images/about/bach.jpg" alt="Khue"/>
                                         </div>
                                         <figcaption><h2>Bach</h2></figcaption>
                                     </figure>
@@ -336,7 +336,7 @@
                                         </tr>
                                         <tr class="table-row">
                                             <td><strong>Monday</strong></td>
-                                            <td>Vovinam <br/>9a.m-12a.m</td>
+                                            <td>Free</td>
                                             <td>Free</td>
                                         </tr>
                                         <tr class="table-row">
@@ -347,7 +347,7 @@
                                         <tr class="table-row">
                                             <td><strong>Wednesday</strong></td>
                                             <td>COS10006 - Network and Switching <br/>8a.m - 12a.m</td>
-                                            <td class="sunday-td">Free</td>
+                                            <td>Free</td>
                                         </tr>
                                         <tr class="table-row">
                                             <td><strong>Thursday</strong></td>
@@ -357,7 +357,7 @@
                                         <tr class="table-row">
                                             <td><strong>Friday</strong></td>
                                             <td>Free</td>
-                                            <td>COS10005 - Web Development <br/>1p.m - 4p.m</td>
+                                            <td>Free</td>
                                         </tr>
                                         <tr class="table-row">
                                             <td><strong>Saturday</strong></td>
@@ -365,7 +365,7 @@
                                             <td>Free</td>
                                         </tr>
                                         <tr class="table-row">
-                                            <td id="sunday-th" class="sunday"><strong>Sunday</strong></td>
+                                            <td class="sunday"><strong>Sunday</strong></td>
                                             <td class="sunday-td">Free</td>
                                             <td class="sunday-td">Free</td>
                                         </tr>
@@ -378,27 +378,27 @@
                                 <div class="details-container">
                                     <div class="info-container">
                                         <div class="member-info">
-                                            <div class="single-info">
+                                            <dl class="single-info">
                                                 <dt><strong>Name: </strong></dt>
                                                 <dd>Le Tran Bao Kien</dd>
-                                            </div>
-                                            <div class="single-info">
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Student ID: </strong></dt>
-                                                <dd>s104221423</dd>
-                                            </div>
-                                            <div class="single-info">
+                                                <dd>104223584</dd>
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Course: </strong></dt>
                                                 <dd>Bachelor of Computer Science</dd>
-                                            </div>
-                                            <div class="single-info">
+                                            </dl>
+                                            <dl class="single-info">
                                                 <dt><strong>Email: </strong></dt>
-                                                <dd>hoangkhue1803@gmail.com</dd>
-                                            </div>
+                                                <dd>104223584@swin.edu.au</dd>
+                                            </dl>
                                         </div>
                                     </div>
                                     <figure class="figure">
                                         <div class="img-container">
-                                            <img src="public/images/about/khue.jpg" alt="Khue"/>
+                                            <img src="public/images/about/kien.jpg" alt="Khue"/>
                                         </div>
                                         <figcaption><h2>KIEN</h2></figcaption>
                                     </figure>
@@ -423,7 +423,7 @@
                                         <tr class="table-row">
                                             <td><strong>Wednesday</strong></td>
                                             <td>COS10006 - Network and Switching <br/>8a.m - 12a.m</td>
-                                            <td class="sunday-td">Free</td>
+                                            <td>Free</td>
                                         </tr>
                                         <tr class="table-row">
                                             <td><strong>Thursday</strong></td>
@@ -441,7 +441,7 @@
                                             <td>Free</td>
                                         </tr>
                                         <tr class="table-row">
-                                            <td id="sunday-th" class="sunday"><strong>Sunday</strong></td>
+                                            <td class="sunday"><strong>Sunday</strong></td>
                                             <td class="sunday-td">Free</td>
                                             <td class="sunday-td">Free</td>
                                         </tr>
@@ -460,21 +460,21 @@
                             <svg class="waves behind" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                                 <defs>
-                                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                    <path id="gentle-wave1" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                                 </defs>
                                 <g class="parallax">
-                                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(20,45,45, 1)" />
+                                    <use xlink:href="#gentle-wave1" x="48" y="0" fill="rgba(20,45,45, 1)" />
                                 </g>
                             </svg>
                             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                                 <defs>
-                                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                    <path id="gentle-wave2" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                                 </defs>
                                 <g class="parallax">
-                                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(20,45,45, 0.8)" />
-                                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(20,45,45,0.6)" />
-                                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(20,45,45, 0.4)"/>
+                                    <use xlink:href="#gentle-wave2" x="48" y="3" fill="rgba(20,45,45, 0.8)" />
+                                    <use xlink:href="#gentle-wave2" x="48" y="5" fill="rgba(20,45,45,0.6)" />
+                                    <use xlink:href="#gentle-wave2" x="48" y="7" fill="rgb(20,45,45, 0.4)"/>
                                 </g>
                             </svg>
                         </div>
@@ -484,18 +484,18 @@
         </main>
         <footer>
             <div id="footer">
-                <section id="logo">
+                <section class="logo">
                     <a href="index.html">
                         <img src="public/images/logo/png/logo-no-background.png" alt=""/>
                     </a>
                 </section>
                 <section id="footer-nav">
                     <ul>
-                        <a href="index.html"><li>Home</li></a>
-                        <a href="products.html"><li>Products</li></a>
-                        <a href="enquiry.html"><li>Enquiry</li></a>
-                        <a href="about.html"><li>About</li></a>
-                        <a href="enhancements.html"><li>Enhancements</li></a>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="enhancements.html">Enhancements</a></li>
                     </ul>
                 </section>
             </div>
