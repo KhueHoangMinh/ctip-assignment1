@@ -11,7 +11,7 @@ html {
     padding: 0;
     color: rgba(220, 220, 220, 1);
     font-family: sans-serif;
-    overflow: overlay;
+    /* overflow: overlay; */
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -83,14 +83,14 @@ header {
 }
 
 
-#logo {
+.logo {
     display: flex;
     position: relative;
     align-items: center;
     padding: 0px 20px;
 }
 
-#logo img {
+.logo img {
     height: 50px;
 }
 
@@ -110,7 +110,7 @@ nav {
     transition: 0.2s ease-in-out;
 }
 
-#expand-btn input {
+#openclose {
     display: none;
 }
 #expand-btn img {
@@ -130,11 +130,11 @@ nav {
     #expand-btn {
         display: flex;
     }
-    #expand-btn:has(input:checked) ~ nav {
+    #openclose:checked ~ nav {
         left: calc(100% - 300px);
         box-shadow: -3px 0px 15px black;
     }
-    #expand-btn:has(input:checked) {
+    #openclose:checked ~ #expand-btn {
         background-color: rgba(255,255,255, 0.1);
     }
 }
@@ -186,8 +186,19 @@ nav {
     flex-wrap: wrap;
 }
 
-#footer-nav ul > a {
+#footer-nav ul li {
     padding: 50px;
+    padding-left: 5px;
+    color: rgba(255,255,255, 1);
+}
+
+#footer-nav ul li a {
+    color: rgba(255,255,255, 0.8);
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+#footer-nav ul li a:hover {
     color: rgba(255,255,255, 1);
 }
 
@@ -441,7 +452,7 @@ nav {
     color: white;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6),rgba(0,0,0,0.9),rgba(0,0,0,1));
+    background: radial-gradient(rgba(255,255,255,0.01),rgba(0,0,0,1));
 }
 
 @keyframes bg-move {
@@ -622,6 +633,10 @@ nav {
     z-index: 0;
 }
 
+.avail-color {
+    margin-top: 10px;
+}
+
 .item ~ .row-last {
     right: 100%;
     left:auto;
@@ -683,7 +698,7 @@ nav {
     padding-top: 5px;
 }
 
-#item-container {
+.item-container {
     position: relative;
     width: 100%;
     display: flex;
@@ -1350,6 +1365,10 @@ nav {
     border: 1px solid white;
 }
 
+#prefcontact {
+    font-size: 20px;
+}
+
 
 
 /* end form style css */
@@ -1442,6 +1461,21 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* background-image: url(../images/about/particles.png);
+    background-repeat: repeat;
+    background-position-y: 0%;
+    animation: particle-move 60s infinite linear;
+    border: 20px solid black; */
+}
+
+@keyframes particle-move {
+    0% {
+        background-position-y: 0%;
+    }
+    
+    100% {
+        background-position-y: -3000%;
+    }
 }
 
 @media (max-width: 860px) {
@@ -1453,12 +1487,28 @@ nav {
 .wrapper {
     overflow: hidden;
     border-radius: 10px;
-    border: 1px solid white;
-    background-color: rgba(255,255,255, 0.2);
+    border: 5px solid white;
+    background-color: rgba(200,200,200,1);
     box-shadow: 5px 5px 15px black;
     width: 100%;
     min-width: 380px;
 }
+#nhi-details .wrapper {
+    background-color: rgb(237, 197, 204);
+}
+#khue-details .wrapper {
+    background-color: rgb(113, 113, 113);
+}
+#hoang-details .wrapper {
+    background-color: rgb(205, 208, 233);
+}
+#bach-details .wrapper {
+    background-color: rgb(110, 116, 147);
+}
+#kien-details .wrapper {
+    background-color: rgb(147, 236, 221);
+}
+
 
 .member-details .details-container {
     display: grid;
@@ -1472,6 +1522,8 @@ nav {
     height: 100%;
     width: 100%;
 }
+
+
 
 @media (max-width: 800px) {
     .member-details .details-container {
@@ -1496,10 +1548,11 @@ nav {
     margin: 0;  
     width: 100%;
     bottom: 10px;
-    font-size: 60px;
+    font-size: 55px;
+    font-weight: 5000;
     color: white;
     text-shadow: 3px 3px 10px black;
-    font-family: 'Chalkduster',sans-serif;
+    font-family: 'Comic Sans MS',sans-serif;
 }
 
 .img-container {
@@ -1513,20 +1566,21 @@ nav {
 }
 
 #nhi-details {
-    background: radial-gradient(rgb(209, 171, 239),rgb(236, 173, 214),rgb(231, 151, 166));
+    background-color:rgb(231, 151, 166);
 }
 #khue-details {
-    background: radial-gradient(rgb(105, 105, 105),rgb(123, 123, 123),rgb(152, 152, 152));
+    background-color: rgb(33,33,33);
 }
 #hoang-details {
-    background: radial-gradient(rgb(171, 231, 208),rgb(165, 222, 235),rgb(185, 190, 231));
+    background-color: rgb(185, 190, 231);
 }
 #bach-details {
-    background: radial-gradient(rgb(117, 117, 141),rgb(121, 120, 146),rgb(76, 86, 146));
+    background-color:rgb(76, 86, 146);
 }
 #kien-details {
-    background: radial-gradient(rgb(150, 223, 211),rgb(116, 227, 220),rgb(60, 237, 207));
+    background-color:rgb(60, 237, 207);
 }
+
 
 .figure img {
     height: 70%;
@@ -1535,6 +1589,7 @@ nav {
     position: relative;
     border-radius: 30px;
     box-shadow: 3px 3px 20px black;
+    object-fit: cover;
 }
 
 /* #figure figcaption {
