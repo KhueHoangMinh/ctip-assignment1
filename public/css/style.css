@@ -907,33 +907,9 @@ nav {
     text-align: justify;
 }
 
-.info-table {
-    background-color: transparent;
-    width: 100%;
-    border-spacing: 0;
-}
-
-.info-table th, td {
-    padding: 0;
-}
-
-.info-table th {
-    background-color: rgba(0,0,0,0.6);
-    padding: 5px 0;
-    text-align: center;
-    border:1px solid rgba(220, 220, 220, 0.2);
-}
-
-.info-table td {
-    background-color: rgba(220, 220, 220, 0.3);
-    text-align: center;
-    border:1px solid rgba(220, 220, 220, 0.2);
-}
-
 .table-row {
     transition: 0.2s ease-in-out;
 }
-
 .table-row:hover {
     background-color: white;
     color: black;
@@ -1496,7 +1472,7 @@ nav {
     margin: 20px 0;
 }
 
-.table-container {
+.member-details .table-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1504,7 +1480,7 @@ nav {
     padding-bottom: 20px;
 }
 
-.table-container table {
+ table {
     background-color: transparent;
     width: 98%;
     border: 2px solid rgba(255,255,255,0.2) ;
@@ -1512,18 +1488,18 @@ nav {
     padding: 3px;
 }
 
-.table-container table th, td {
+ table th, td {
     border-radius: 5px;
 }
 
-.table-container table th {
+ table th {
     background-color: rgba(0,0,0,0.6);
     padding: 5px 0;
     text-align: center;
     border:1px solid rgba(220, 220, 220, 0.2);
 }
 
-.table-container table td {
+ table td {
     background-color: rgba(0,0,0,0.2);
     text-align: center;
     border:1px solid rgba(220, 220, 220, 0.2);
