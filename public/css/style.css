@@ -272,12 +272,23 @@ nav {
 
 
 #banner {
+    position: fixed;
+    z-index: -10;
     height: calc(100vh - 80px);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    flex-direction: column;
+}
+
+#banner ~ div {
+    position: relative;
+    height: calc(100vh - 80px);
+    width: 100vw;
+    background-color: transparent;
+    z-index: 100;
 }
 
 #banner #banner-images {
