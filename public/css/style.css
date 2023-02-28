@@ -798,7 +798,7 @@ nav {
 
 .product {
     position: relative;
-    padding: 100px 140px;
+    padding: 100px 6vw;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -818,14 +818,14 @@ nav {
 .details {
     width: 100%;
     display: grid;
-    grid-template-columns: 30% calc(70% - 50px);
+    grid-template-columns: 35% calc(65% - 50px);
     gap: 50px;
 }
 
 .reverse {
     width: 100%;
     display: grid;
-    grid-template-columns: calc(70% - 50px) 30%;
+    grid-template-columns: calc(65% - 50px) 35%;
     gap: 50px;
 }
 
@@ -850,15 +850,10 @@ nav {
     font-weight: 400;
 }
 
-.details aside::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
-
 .details aside {
     position: relative;
     width: 100%;
+    height: fit-content;
     border-radius: 50px;
     box-shadow: 10px 10px 20px black;
     overflow: hidden;
@@ -866,6 +861,12 @@ nav {
     border: 1px solid rgba(0,0,0,0.2);
     margin: 2px;
     padding: 0px;
+}
+
+.details aside::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
 
