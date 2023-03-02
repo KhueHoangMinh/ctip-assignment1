@@ -1491,6 +1491,16 @@ nav {
     margin: 20px 0;
 }
 
+.email-link {
+    font-weight: 600;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+.email-link:hover {
+    color: #333;
+}
+
 .member-details .table-container {
     display: flex;
     align-items: center;
